@@ -1,14 +1,17 @@
 import cv2
-import matplotlib.pyplot as plt
-#import numpy as np
- 
-# Create a VideoCapture object and read from input file
+
 # If the input is the camera, pass 0 instead of the video file name
 cap = cv2.VideoCapture("/Users/RuneNisbeth/Documents/6semester/Fagprojekt/github/PiPyOpenCV/read:show/Paper.mp4")
 
-while cap.isOpened():
-    ret, frame = cap.read()
-    plt.imshow(frame)
-    plt.show()
-  
-    
+while(cap.isOpened()):
+  # Capture frame-by-frame
+  ret, frame = cap.read()
+  if ret == True:
+    cv2.imshow('Frame',frame)
+    if cv2.waitKey(25) & 0xFF == ord('q'):
+      break
+  else: 
+    break
+ 
+cap.release()
+cv2.destroyAllWindows()
