@@ -2,8 +2,8 @@
 import cv2
 from matplotlib import pyplot as plt
 
-img = cv2.imread("/Users/RuneNisbeth/Documents/6semester/fagprojekt/python/Nyhavn.jpg")
-print(img)
+img = cv2.imread("/Users/RuneNisbeth/Documents/6semester/fagprojekt/github/PiPyOpenCV/read:show/Nyhavn.jpg")
+#print(img)
 
 #plt.imshow(img)
 cv2.imshow('image',img)
