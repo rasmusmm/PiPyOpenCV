@@ -2,7 +2,7 @@
 import cv2
 #from matplotlib import pyplot as plt
 
-img = cv2.imread("/Users/RuneNisbeth/Documents/6semester/fagprojekt/python/Nyhavn.jpg")
+
 #print(img)
 
 # For displaying the video with pyplot. 
