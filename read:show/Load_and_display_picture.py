@@ -1,10 +1,11 @@
 #import numpy as np
 import cv2
-from matplotlib import pyplot as plt
+#from matplotlib import pyplot as plt
 
 img = cv2.imread("/Users/RuneNisbeth/Documents/6semester/fagprojekt/python/Nyhavn.jpg")
 #print(img)
 
+# For displaying the video with pyplot. 
 #plt.imshow(img)
 cv2.imshow('image',img)
 cv2.waitKey(0)
