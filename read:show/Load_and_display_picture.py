@@ -2,10 +2,10 @@
 import cv2
 from matplotlib import pyplot as plt
 
-img = cv2.imread("/Users/RuneNisbeth/Documents/6semester/fagprojekt/github/PiPyOpenCV/read:show/Nyhavn.jpg")
+img = cv2.imread("/Users/RuneNisbeth/Documents/6semester/fagprojekt/PiPyOpenCV/SteveJobs.jpeg")
 #print(img)
 
 #plt.imshow(img)
-cv2.imshow('image',img)
+cv2.imshow('image', img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
